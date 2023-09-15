@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="flex h-screen bg-[#111827] justify-center items-center">
+         <div class="bg-[#1F2937] w-[470px] h-[610px] p-8 rounded-lg mx-3">
+              <div class="flex flex-col w-full h-auto">
+                 <h1 class="text-white text-2xl font-bold md:text-left text-center">Welcome back</h1>
+                 <div class="flex w-full items-center justify-center md:justify-between md:mt-6  mt-4 flex-wrap">
+                    <button class="flex flex-row-reverse items-center  sm:justify-between text-sm font-semibold border-[0.75px]  border-slate-400 rounded-lg py-2 px-4 md:py-[7px] md:px-4 transition-all hover:bg-[#374151] text-[#9CA3AF] hover:text-white">
+                        <span>Login in with Google</span>
+                        <img src="google.png" class="h-7 mr-2">
+                    </button>
+
+                    <button class="max-[490px]:mt-3   flex flex-row-reverse items-center  text-sm font-semibold border-[0.75px]   border-slate-400 rounded-lg py-2 px-[23px] md:py-[7.5px] md:px-4 transition-all hover:bg-[#374151] 
+                    text-[#9CA3AF] hover:text-white"">
+                        <span>Login in with Apple</span>
+                        <i class="fa-brands fa-apple text-[28px] text-white mr-2"></i>
+                    </button>
+                 </div>
+                 <div class="flex w-[100%] h-6 items-center justify-evenly md:mt-6 mt-4">
+                    <div class="bg-[#374151] h-[2px] w-[70%]"></div>
+                    <span class="text-[#9CA3AF] font-semibold mx-4 text-base">or</span>
+                    <div class="bg-[#374151] h-[2px] w-[70%]"></div>
+                </div>
+              </div>
+
+              <form class="flex flex-col md:mt-6 mt-4">
+                <div class="flex flex-col md:mt-6 mt-4">
+                <label for="email" class="text-base text-white font-semibold mb-2">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" class="bg-[#374151] border-[0.75px] border-slate-400 rounded-lg py-[10px] pl-3 focus:outline-[#3F83F8] focus:outline-none focus:outline-offset-0 focus:border-none text-white text-base font-semibold">
+            </div>
+
+            <div class="flex flex-col md:mt-6 mt-4">
+                <label for="pass" class="text-base text-white font-semibold mb-2">Password</label>
+                <input type="password" id="pass"  placeholder="*********"   class="bg-[#374151] border-[0.75px] border-slate-400 rounded-lg py-[10px] pl-3 focus:outline-[#3F83F8] focus:outline-none focus:outline-offset-0 focus:border-none text-white text-base font-semibold">
+            </div>
+                <div class="flex justify-between md:mt-6 mt-4">
+                    <div>
+                        <input type="checkbox" id="check" class=" w-4 h-4 border-[0.75px] border-slate-400 rounded-lg border-r-8 bg-transparent accent-[#3f83f8]  focus:outline-[#3F83F8] focus:outline-none focus:outline-offset-1 focus:border-none">
+                        <label for="check" class="text-[#CBCDD6] font-semibold text-base ml-1">Remember me</label>
+                        
+                    </div>
+                    <a href="#" class="text-base font-normal text-[#2563EB] no-underline hover:underline transition-all">Forgot password?</a>
+                </div>
+                <button type="submit" class="font-semibold text-white text-base bg-[#2563eb] rounded-lg py-[7px] transition-all hover:opacity-80 md:mt-6 mt-4">Sign in to your account</button>
+              </form>
+
+              <div class="md:mt-6 mt-4">
+                <span class="text-base font-normal text-[#C6D5D1]  max-[375px]:text-[15px] " >Don't have an account yet?</span>
+                <a href="#" class="text-base font-semibold text-[#2563eb] no-underline hover:underline transition-all max-[375px]:text-[15px] " >Sign up here</a>
+              </div>
+         </div>
+    </div>
+    
+</body>
+</html>
